@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/body1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ff7a5b"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="Product"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/add_product_back_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="2.47"
+            android:clickable="true"
+            android:src="@drawable/fanhuisecl" />
+
+        <Button
+            android:id="@+id/ti_jiao222222"
+            android:layout_width="47dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/li_zhi"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"  android:layout_marginRight="4dp" />
+
+        <Button
+            android:id="@+id/deleteButton01"
+            android:layout_width="46dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ti_jiao222222"
+            android:background="@drawable/ru_zhi_lizhi"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/view1" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <RelativeLayout
+            android:id="@+id/body3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/wni"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="6dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/product_name_editText1"
+                    android:layout_alignBottom="@+id/product_name_editText1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="6dp"
+                    android:text="Name"
+                    android:textColor="#3399CC"
+                    android:textSize="@dimen/zhucewenzidaxiao" />
+
+                <EditText
+                    android:id="@+id/product_name_editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/edittext_down"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Product Name"
+                    android:paddingLeft="5dp"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_margin="6dp"
+                android:background="@drawable/wni"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="6dp" >
+
+                <EditText
+                    android:id="@+id/EditText011"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/edittext_down"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Unit Type"
+                    android:paddingLeft="5dp"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/TextView011"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/EditText011"
+                    android:layout_alignBottom="@+id/EditText011"
+                    android:layout_alignParentLeft="true"
+                    android:text="Unit Type"
+                    android:textColor="#3399CC"
+                    android:textSize="@dimen/zhucewenzidaxiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout03"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/RelativeLayout01"
+                android:layout_margin="6dp"
+                android:background="@drawable/wni"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="6dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="6dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/EditText01"
+                    android:layout_alignBottom="@+id/EditText01"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="0dp"
+                    android:text="Purchase Rate"
+                    android:textColor="#3399CC"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/EditText01"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/TextView01"
+                    android:background="@drawable/edittext_down"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Purchase Rate"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/RelativeLayout03"
+                android:layout_margin="6dp"
+                android:background="@drawable/wni"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="6dp" >
+
+                <EditText
+                    android:id="@+id/EditTextMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/edittext_down"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Sale Rate"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:textSize="13sp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/EditText022222"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/edittext_down"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:gravity="left|center"
+                    android:hint="Sale Rate"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/EditTextMobile"
+                    android:layout_alignBottom="@+id/EditTextMobile"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="6dp"
+                    android:text="Sale Rate"
+                    android:textColor="#3399CC"
+                    android:textSize="@dimen/zhucewenzidaxiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout04"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/RelativeLayout05"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/wni"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="6dp"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/EditText033332"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/TextView03"
+                    android:background="@drawable/edittext_down"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Whatsapp No."
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/EditText033332"
+                    android:layout_alignBottom="@+id/EditText033332"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:text="What&apos;sapp"
+                    android:textColor="#3399CC"
+                    android:textSize="@dimen/zhucewenzidaxiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout05"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/RelativeLayout02"
+                android:layout_margin="6dp"
+                android:background="@drawable/wni"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="6dp" >
+
+                <EditText
+                    android:id="@+id/EditText03333"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/edittext_down"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Category"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/EditText03333"
+                    android:layout_alignBottom="@+id/EditText03333"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:text="Category"
+                    android:textColor="#3399CC"
+                    android:textSize="@dimen/zhucewenzidaxiao" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout06"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/RelativeLayout05"
+                android:layout_marginTop="75dp"
+                android:background="@drawable/wni"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="6dp"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/EditText03"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/TextView05"
+                    android:background="@drawable/edittext_down"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Opening"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/EditText03"
+                    android:layout_alignBottom="@+id/EditText03"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:text="Opening"
+                    android:textColor="#3399CC"
+                    android:textSize="@dimen/zhucewenzidaxiao" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

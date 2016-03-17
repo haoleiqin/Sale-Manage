@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--注册文字大小  -->
+     <dimen name="zhucewenzidaxiao">13sp</dimen>
+  <!--注册文字大小  -->
+     <dimen name="mainjian">8dp</dimen>
+     
+       <!--注册文字大小  -->
+     <dimen name="mainjian1">55dp</dimen>
+</resources>

@@ -33,34 +33,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
+ 
             android:layout_marginLeft="12dp"
             android:layout_weight="2.47"
             android:clickable="true"
             android:src="@drawable/fanhuisecl" />
-
-        <Button
-            android:id="@+id/ti_jiao222222"
-            android:layout_width="49dp"
-            android:layout_height="45dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/li_zhi"
-            android:text="Save"
-            android:textColor="@android:color/white"  android:layout_marginRight="4dp"
-            android:textSize="16sp" />
-
-        <Button
-            android:id="@+id/deleteButton01"
-            android:layout_width="47dp"
-            android:layout_height="45dp"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/ti_jiao222222"
-            android:background="@drawable/ru_zhi_lizhi"
-            android:text="Delete"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"   android:layout_marginRight="8dp"/>
-
     </RelativeLayout>
 
     <LinearLayout
@@ -88,6 +67,7 @@
             android:id="@+id/body3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="end"
             android:focusable="true"
             android:focusableInTouchMode="true" >
 
@@ -379,6 +359,29 @@
                     android:textColor="#3399CC"
                     android:textSize="@dimen/zhucewenzidaxiao" />
             </RelativeLayout>
+
+            <Button
+                android:id="@+id/ti_jiao22222343422"
+                android:layout_width="149dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/RelativeLayout06"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/li_zhi"
+                android:text="Save"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"  android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/deleteButton01"
+                android:layout_width="149dp"
+                android:layout_height="45dp" android:layout_marginTop="6dp" 
+                android:layout_alignLeft="@+id/ti_jiao22222343422"
+                android:layout_below="@+id/ti_jiao22222343422"
+                android:background="@drawable/ru_zhi_lizhi"
+                android:text="Delete"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
         </RelativeLayout>
     </ScrollView>
 

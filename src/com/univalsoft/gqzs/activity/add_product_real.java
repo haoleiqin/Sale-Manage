@@ -36,6 +36,7 @@ public class add_product_real extends Activity {
 	private EditText whatsapp;
 	private EditText opening;
 
+
 	private TextView Timetextview;
 
 	@Override
@@ -69,6 +70,7 @@ public class add_product_real extends Activity {
 
 			}
 		});
+		
 
 	}// ONcreate end
 

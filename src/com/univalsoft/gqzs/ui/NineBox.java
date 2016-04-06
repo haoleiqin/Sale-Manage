@@ -3,26 +3,25 @@ package com.univalsoft.gqzs.ui;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.univalsoft.gqzs.R;
-import com.univalsoft.gqzs.activity.Backup;
-import com.univalsoft.gqzs.activity.ExporttoExcel;
-import com.univalsoft.gqzs.activity.Operation_Customer;
-import com.univalsoft.gqzs.activity.Product;
-import com.univalsoft.gqzs.activity.Sales;
-import com.univalsoft.gqzs.activity.Setting;
-import com.univalsoft.gqzs.activity.add_product_real;
-
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
+
+import com.univalsoft.gqzs.R;
+import com.univalsoft.gqzs.activity.Backup;
+import com.univalsoft.gqzs.activity.ExporttoExcel;
+import com.univalsoft.gqzs.activity.Operation_Customer;
+import com.univalsoft.gqzs.activity.Product;
+import com.univalsoft.gqzs.activity.Sales;
 
 public class NineBox extends Activity {
 	/** Called when the activity is first created. */
@@ -71,20 +70,20 @@ public class NineBox extends Activity {
 						.getString(R.string.gridview6));
 			}
 			if (i == 7) {
-				map.put("ItemImage", R.drawable.g17);
+				map.put("ItemImage", R.drawable.g19);
 				map.put("ItemText", getResources()
 						.getString(R.string.gridview7));
 			}
-			if (i == 8) {
-				map.put("ItemImage", R.drawable.g18);
-				map.put("ItemText", getResources()
-						.getString(R.string.gridview8));
-			}
-			if (i == 9) {
-				map.put("ItemImage", R.drawable.g19);
-				map.put("ItemText", getResources()
-						.getString(R.string.gridview9));
-			}
+			 if (i == 8) {
+			 map.put("ItemImage", R.drawable.g18);
+			 map.put("ItemText", getResources()
+			 .getString(R.string.gridview8));
+			 }
+			 if (i == 9) {
+			 map.put("ItemImage", R.drawable.g19);
+			 map.put("ItemText", getResources()
+			 .getString(R.string.gridview9));
+			 }
 			lstImageItem.add(map);
 
 		}
@@ -143,31 +142,52 @@ public class NineBox extends Activity {
 			if (item.get("ItemText").equals(
 					getResources().getString(R.string.gridview6))) {
 
-				
 				Intent intent = new Intent(NineBox.this, saleKey.class);
-				
+
 				startActivity(intent);
-				
-				
-				
-				
-				
+
 			}
 
 			if (item.get("ItemText").equals(
 					getResources().getString(R.string.gridview7))) {
-				Toast.makeText(NineBox.this, "Clear Cache Success",
-						Toast.LENGTH_SHORT).show();
+
+				// TODO Auto-generated method stub
+				AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(
+						NineBox.this);
+				dialogBuilder.setTitle("Backup DataBase");
+				dialogBuilder.setMessage("Do you want to take Backup?");
+				dialogBuilder.setCancelable(true);
+				dialogBuilder.setPositiveButton("Yes",
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+								finish();
+
+							}
+						});
+				dialogBuilder.setNegativeButton("No",
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+								finish();
+
+							}
+						});
+				dialogBuilder.show();
 			}
-			if (item.get("ItemText").equals(
-					getResources().getString(R.string.gridview8))) {
-				Intent intent = new Intent(NineBox.this, Setting.class);
-				startActivity(intent);
-			}
-			if (item.get("ItemText").equals(
-					getResources().getString(R.string.gridview9))) {
-				finish();
-			}
+
+			 if (item.get("ItemText").equals(
+			 getResources().getString(R.string.gridview8))) {
+			
+			 }
+			 if (item.get("ItemText").equals(
+			 getResources().getString(R.string.gridview9))) {
+			
+			 }
 		}
 	}
 }

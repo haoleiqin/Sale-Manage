@@ -37,7 +37,7 @@ public class add_product extends Activity {
 	private EditText email;
 	private EditText whatsapp;
 	private EditText opening;
-
+	private	 Button ti_jiao222222;
 	private TextView Timetextview;
 
 	@Override
@@ -87,7 +87,7 @@ public class add_product extends Activity {
 		//
 		// product_nameEditText = (EditText)
 		// findViewById(R.id.product_name_editText1);
-		Button ti_jiao222222 = (Button) findViewById(R.id.ti_jiao222222);
+	  ti_jiao222222 = (Button) findViewById(R.id.ti_jiao22222343422);
 
 		// /////////
 		name = (EditText) findViewById(R.id.product_name_editText1);

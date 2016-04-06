@@ -40,7 +40,7 @@
             android:src="@drawable/fanhuisecl" />
 
         <Button
-            android:id="@+id/ti_jiao222222"
+            android:id="@+id/ti_jiao2222345345345343422"
             android:layout_width="49dp"
             android:layout_height="45dp"
             android:layout_alignParentBottom="true"
@@ -116,7 +116,7 @@
                     android:textColor="#3399CC"
                     android:textSize="@dimen/zhucewenzidaxiao" />
 
-                <EditText
+                <TextView
                     android:id="@+id/edit_date"
                     android:layout_width="match_parent"
                     android:layout_height="34dp"

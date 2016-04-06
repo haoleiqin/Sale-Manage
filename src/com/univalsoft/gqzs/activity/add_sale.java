@@ -28,7 +28,7 @@ public class add_sale extends Activity {
 	private Calendar c = null;
 	private SQLiteDatabase db;
 	private sale_dataBase sale_dbhelper;
-	private EditText date;
+	private TextView date;
 	private EditText custom;
 	private EditText product;
 	private EditText notes;
@@ -86,9 +86,9 @@ public class add_sale extends Activity {
 	}
 
 	private void Zhuce() {
-		Button ti_jiao222222 = (Button) findViewById(R.id.ti_jiao222222);
+		Button ti_jiao222222 = (Button) findViewById(R.id.ti_jiao2222345345345343422);
 
-		date = (EditText) findViewById(R.id.edit_date);
+		date = (TextView) findViewById(R.id.edit_date);
 		custom = (EditText) findViewById(R.id.edit_custom);
 		product = (EditText) findViewById(R.id.edit_product);
 		notes = (EditText) findViewById(R.id.edit_notes);

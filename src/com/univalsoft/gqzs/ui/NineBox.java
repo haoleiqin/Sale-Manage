@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import com.univalsoft.gqzs.R;
 import com.univalsoft.gqzs.activity.Backup;
@@ -70,20 +70,20 @@ public class NineBox extends Activity {
 						.getString(R.string.gridview6));
 			}
 			if (i == 7) {
-				map.put("ItemImage", R.drawable.g19);
+				map.put("ItemImage", R.drawable.g22);
 				map.put("ItemText", getResources()
 						.getString(R.string.gridview7));
 			}
-			 if (i == 8) {
-			 map.put("ItemImage", R.drawable.g18);
-			 map.put("ItemText", getResources()
-			 .getString(R.string.gridview8));
-			 }
-			 if (i == 9) {
-			 map.put("ItemImage", R.drawable.g19);
-			 map.put("ItemText", getResources()
-			 .getString(R.string.gridview9));
-			 }
+			if (i == 8) {
+				map.put("ItemImage", R.drawable.g18);
+				map.put("ItemText", getResources()
+						.getString(R.string.gridview8));
+			}
+			if (i == 9) {
+				map.put("ItemImage", R.drawable.g19);
+				map.put("ItemText", getResources()
+						.getString(R.string.gridview9));
+			}
 			lstImageItem.add(map);
 
 		}
@@ -150,44 +150,57 @@ public class NineBox extends Activity {
 
 			if (item.get("ItemText").equals(
 					getResources().getString(R.string.gridview7))) {
+				//
+				// // TODO Auto-generated method stub
+				// AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(
+				// NineBox.this);
+				// dialogBuilder.setTitle("Backup DataBase");
+				// dialogBuilder.setMessage("Do you want to take Backup?");
+				// dialogBuilder.setCancelable(true);
+				// dialogBuilder.setPositiveButton("Yes",
+				// new DialogInterface.OnClickListener() {
+				//
+				// @Override
+				// public void onClick(DialogInterface dialog,
+				// int which) {
+				// finish();
+				//
+				// }
+				// });
+				// dialogBuilder.setNegativeButton("No",
+				// new DialogInterface.OnClickListener() {
+				//
+				// @Override
+				// public void onClick(DialogInterface dialog,
+				// int which) {
+				// finish();
+				//
+				// }
+				// });
+				// dialogBuilder.show();
 
-				// TODO Auto-generated method stub
-				AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(
-						NineBox.this);
-				dialogBuilder.setTitle("Backup DataBase");
-				dialogBuilder.setMessage("Do you want to take Backup?");
-				dialogBuilder.setCancelable(true);
-				dialogBuilder.setPositiveButton("Yes",
-						new DialogInterface.OnClickListener() {
+				Intent intent = new Intent();
+				try {
+					ComponentName componetName = new ComponentName(
+							"qo.shaoyou.free.qo",
+							"qo.shaoyou.free.qo.activity.Main");
+					intent.setComponent(componetName);
+					startActivity(intent);
 
-							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
-								finish();
-
-							}
-						});
-				dialogBuilder.setNegativeButton("No",
-						new DialogInterface.OnClickListener() {
-
-							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
-								finish();
-
-							}
-						});
-				dialogBuilder.show();
+				} catch (Exception e) {
+					Toast.makeText(NineBox.this, "Please install Personal Version", Toast.LENGTH_LONG).show();
+				}
+				finish();
 			}
 
-			 if (item.get("ItemText").equals(
-			 getResources().getString(R.string.gridview8))) {
-			
-			 }
-			 if (item.get("ItemText").equals(
-			 getResources().getString(R.string.gridview9))) {
-			
-			 }
+			if (item.get("ItemText").equals(
+					getResources().getString(R.string.gridview8))) {
+
+			}
+			if (item.get("ItemText").equals(
+					getResources().getString(R.string.gridview9))) {
+
+			}
 		}
 	}
 }

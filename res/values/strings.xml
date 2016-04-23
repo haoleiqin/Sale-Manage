@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Sale</string>
+    <string name="app_name">Business</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="hello">Hello World, NineBox!</string>
@@ -11,7 +11,7 @@
     <string name="gridview4">Export</string>
     <string name="gridview5">Backup</string>
     <string name="gridview6">License</string>
-    <string name="gridview7">Clear</string>
+    <string name="gridview7">YiKe</string>
     <string name="gridview8">Settings</string>
     <string name="gridview9">Exit</string>
 

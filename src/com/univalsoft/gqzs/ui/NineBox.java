@@ -185,12 +185,12 @@ public class NineBox extends Activity {
 							"qo.shaoyou.free.qo",
 							"qo.shaoyou.free.qo.activity.Main");
 					intent.setComponent(componetName);
-					startActivity(intent);
+					startActivity(intent);		finish();
 
 				} catch (Exception e) {
 					Toast.makeText(NineBox.this, "Please install Personal Version", Toast.LENGTH_LONG).show();
 				}
-				finish();
+		
 			}
 
 			if (item.get("ItemText").equals(

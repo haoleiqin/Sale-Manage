@@ -56,7 +56,7 @@ public class Editcostomer extends Activity {
 	}
 
 	private void Zhuce() {
-		ti_jiao222222 = (Button) findViewById(R.id.ti_jiao222222);
+		ti_jiao222222 = (Button) findViewById(R.id.ti_jiao22222343422);
 		name = (EditText) findViewById(R.id.product_name_editText1);
 		address = (EditText) findViewById(R.id.EditText011);
 		mobile = (EditText) findViewById(R.id.EditText01);

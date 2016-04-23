@@ -10,6 +10,7 @@ import android.widget.DatePicker;
 import android.widget.DatePicker.OnDateChangedListener;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
 
@@ -74,11 +75,11 @@ public class DateTimePickDialogUtil implements OnDateChangedListener,
 	/**
 	 * 弹出日期时间选择框方法
 	 * 
-	 * @param inputDate
+	 * @param startDateTime
 	 *            :为需要设置的日期时间文本编辑框
 	 * @return
 	 */
-	public AlertDialog dateTimePicKDialog(final EditText inputDate) {
+	public AlertDialog dateTimePicKDialog(final TextView startDateTime) {
 		LinearLayout dateTimeLayout = (LinearLayout) activity
 				.getLayoutInflater().inflate(R.layout.common_datetime, null);
 		datePicker = (DatePicker) dateTimeLayout.findViewById(R.id.datepicker);
@@ -92,12 +93,12 @@ public class DateTimePickDialogUtil implements OnDateChangedListener,
 				.setView(dateTimeLayout)
 				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int whichButton) {
-						inputDate.setText(dateTime);
+						startDateTime.setText(dateTime);
 					}
 				})
 				.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int whichButton) {
-						inputDate.setText("");
+						startDateTime.setText("");
 					}
 				}).show();
 

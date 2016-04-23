@@ -33,7 +33,7 @@ public class add_sale extends Activity {
 	private EditText product;
 	private EditText notes;
 	private EditText price;
-	private EditText startDateTime;
+	private TextView startDateTime;
 	private TextView Timetextview;
 	private String initStartDateTime = "2013年9月3日 14:44"; // 初始化开始时间
 	private String initEndDateTime = "2014年8月23日 17:44"; // 初始化结束时间
@@ -44,7 +44,7 @@ public class add_sale extends Activity {
 
 		setContentView(R.layout.add_saleorder);
 		Mainfunction();
-		startDateTime = (EditText) findViewById(R.id.edit_date);
+		startDateTime = (TextView) findViewById(R.id.edit_date);
 		startDateTime.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 

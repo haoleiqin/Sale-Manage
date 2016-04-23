@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.univalsoft.gqzs.R;
 import com.univalsoft.gqzs.data.sale_dataBase;
@@ -20,7 +21,7 @@ public class EditSale extends Activity {
 	private SQLiteDatabase db;
 	private sale_dataBase sale_dbhelper;
 	private Button ti_jiao222222;
-	private EditText date;
+	private TextView date;
 	private EditText custom;
 	private EditText product;
 	private EditText notes;
@@ -38,8 +39,8 @@ public class EditSale extends Activity {
 	}
 
 	private void Zhuce() {
-		ti_jiao222222 = (Button) findViewById(R.id.ti_jiao222222);
-		date = (EditText) findViewById(R.id.edit_date);
+		ti_jiao222222 = (Button) findViewById(R.id.ti_jiao2222345345345343422);
+		date = (TextView) findViewById(R.id.edit_date);
 		custom = (EditText) findViewById(R.id.edit_custom);
 		product = (EditText) findViewById(R.id.edit_product);
 		notes = (EditText) findViewById(R.id.edit_notes);

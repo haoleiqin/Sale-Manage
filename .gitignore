@@ -1,5 +1,7 @@
-.project
+/.project
 
 /.classpath
 
 /.idea/
+
+/.idea/*

@@ -1,6 +1,6 @@
 # SaleManage
-<a href="https://github.com/HaoLei-Qin/Sale-Manage/blob/master/bin/Business%20Manage.apk?raw=true"> Business Version DownLoad</a>
+[Business Version DownLoad](https://github.com/HaoLeiQ/Sale-Manage/raw/master/Business%20Manage.apk)
 
-![image](https://github.com/HaoLei-Qin/Sale-Manage/blob/master/bin/res/crunch/drawable/2.png)![image](https://github.com/HaoLei-Qin/Sale-Manage/blob/master/bin/res/crunch/drawable/1.png)
+![image](https://github.com/HaoLeiQ/Sale-Manage/blob/master/bin/res/crunch/drawable/2.png)![image](https://github.com/HaoLeiQ/Sale-Manage/blob/master/bin/res/crunch/drawable/1.png)
 
 
